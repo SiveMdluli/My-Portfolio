@@ -40,8 +40,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 - [Setting up Linters properly]
 - [Adding Index.html and style.css]
 - [styling contents with regards to mobile first design]
@@ -49,8 +47,6 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps:
 - Open your Terminal
@@ -104,8 +100,6 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **Author1**
 
 - GitHub: [SiveMdluli](https://github.com/SiveMdluli)
@@ -117,8 +111,6 @@ You can deploy this project using:
 
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
 
 - Add contact page.
 - Add Project's section
@@ -135,8 +127,6 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project give this repository a 5 star rating.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -144,8 +134,6 @@ If you like this project give this repository a 5 star rating.
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
 
 I would like to thank...
 - Microverse Review Team
