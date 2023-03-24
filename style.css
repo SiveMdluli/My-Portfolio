@@ -26,10 +26,6 @@ header {
   text-decoration: none;
 }
 
-.humburger {
-  margin-right: 90px;
-}
-
 #nav-items {
   display: none !important;
 }
@@ -42,7 +38,6 @@ header {
   background-color: #fff;
   background-image: url(img/header-shapes\ mobile.png);
   background-repeat: no-repeat;
-  position: absolute;
   top: 2.875rem;
   border-bottom-left-radius: 60px;
   height: 44.88rem;
