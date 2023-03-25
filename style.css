@@ -10,6 +10,8 @@ header {
   justify-content: space-between;
   width: 100%;
   height: 48px;
+  margin-left: 6px;
+  margin-top: -7px;
 }
 
 #logo {
@@ -42,6 +44,7 @@ header {
   top: 2.875rem;
   border-bottom-left-radius: 60px;
   height: 44.88rem;
+  margin-left: 6px;
 }
 
 .greeting-hearder {
@@ -116,7 +119,7 @@ header {
   background: #e5e5e5;
   display: grid;
   grid-template-columns: 33.333%;
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 
 .card-container {
@@ -295,7 +298,7 @@ header {
   height: 1150px;
   background: #fff;
   gap: 12px;
-  margin: 45px 6px 6px 6px;
+  margin: 96px 6px 6px 6px;
 }
 
 .about-h1 {
