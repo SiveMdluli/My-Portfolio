@@ -1,8 +1,9 @@
 body {
-  background-color: #fff;
+  background-color: #e5e5e5;
 }
 
 header {
+  background-color: #fff;
   display: flex;
   flex-direction: row;
   align-items: center;
