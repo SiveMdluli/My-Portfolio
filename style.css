@@ -203,10 +203,6 @@ header {
   margin-right: 0;
 }
 
-/* .languages-list{
-  margin-left: -55px;
-} */
-
 .html {
   display: flex;
   flex-direction: row;
@@ -222,10 +218,6 @@ header {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.48px;
-  /* float: left;
-  list-style: none;
-  margin-right: 5px;
-  text-align: center; */
 }
 
 .css {
@@ -243,10 +235,6 @@ header {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.48px;
-  /* float: left;
-  list-style: none;
-  margin-right: 5px;
-  text-align: center; */
 }
 
 .javascript {
@@ -264,10 +252,6 @@ header {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.48px;
-  /* float: left;
-  list-style: none;
-  margin-right: 5px;
-  text-align: center; */
 }
 
 .see-button {
