@@ -296,7 +296,7 @@ header {
   border-bottom-left-radius: 60px;
   width: 370px;
   height: 1150px;
-  background: #fff;
+  background-color: #fff;
   gap: 12px;
   margin: 96px 6px 6px 6px;
 }
@@ -611,4 +611,135 @@ header {
   margin-top: 3px;
   margin-left: 275px;
   color: #5e6c84;
+}
+
+/* Contact Section */
+.contact-section {
+  background-image: url(img/contact\ form\ shapes-mobile@2x.png);
+  background-size: cover;
+  width: 375px;
+  height: 48rem;
+  background-color: #6070ff;
+  border-top-left-radius: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -4px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-me-text {
+  height: 56px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  padding-top: 109px;
+}
+
+.contact-description {
+  width: 327px;
+  left: 24px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-top: -20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -39px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#name {
+  border-radius: 8px;
+  height: 40px;
+  width: 305px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+#email {
+  height: 40px;
+  width: 305px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+  margin-top: 18px;
+}
+
+#msg {
+  margin-top: 18px;
+  width: 305px;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  height: 160px;
+  resize: none;
+}
+
+input {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+}
+
+#get-in-touch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 16px;
+  width: 142px;
+  height: 48px;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 12px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+#get-in-touch:hover {
+  background-color: #6070ff;
+  color: #fff;
+}
+
+#get-in-touch:active {
+  background-color: #2230d2;
+  color: #fff;
 }
