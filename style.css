@@ -11,14 +11,9 @@ header {
   width: 100%;
   height: 48px;
   position: fixed;
-  
+
 }
 
-/* .display-block {
-  display: block;
-  justify-content: space-between;
-
-} */
 
 #logo {
   font-family: "poppins", sans-serif;
@@ -35,42 +30,9 @@ header {
 }
 
 
-/* #toggler,
-label {
-  display: none;
-} */
-
-/* nav {
-  display: flex;
-  flex-direction: row;
-} */
-
 .navbar {
 display: none;
 }
-
-/* @media screen and (max-width: 415px) {
-  .navbar {
-    max-height: 0;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  label {
-    display: inline-flex;
-  }
-
-  #toggler:checked ~ .navbar {
-    max-height: 100vh;
-  }
-
-  #nav-items {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-  }
-} */
 
 /* Header section */
 .header-info-secion {
