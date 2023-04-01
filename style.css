@@ -31,6 +31,16 @@ header {
   text-decoration: none;
 }
 
+
+.name-logo {
+  color: #6070ff;
+  transition: all 1s;
+}
+
+.name-logo:hover {
+  transform: rotate(360deg);
+}
+
 #nav-items {
   display: none;
 }
@@ -116,6 +126,11 @@ header {
   order: 3;
 }
 
+#social-icons li:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
 /* ----The Work Section */
 .work {
   background: #e5e5e5;
@@ -124,21 +139,24 @@ header {
   margin-top: 6rem;
 }
 
-.card-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px;
-  gap: 12px;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  width: 100%;
-  height: 552px;
-  order: 0;
-  flex-grow: 0;
-  margin: 6px;
-}
+@media only screen and (min-width: 400px){
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    width: 20rem;
+    height: 552px;
+    order: 0;
+    flex-grow: 0;
+    margin: 6px;
+  }
+ }
+
 
 .project-img {
   width: 295px;
@@ -168,10 +186,10 @@ header {
   width: 236px;
   height: 32px;
   padding: 0.5rem;
-  margin-top: -30px;
+  margin-top: -0.9rem;
   margin-bottom: 0;
   margin-right: 0;
-  margin-left: -50px;
+  margin-left: -0.2rem;
 }
 
 .description {
@@ -198,9 +216,9 @@ header {
   height: 20px;
   list-style: none;
   order: 2;
-  margin-top: -110px;
+  margin-top: 3rem;
   margin-bottom: 0;
-  margin-left: -90px;
+  margin-left: -0.01rem;
   margin-right: 0;
 }
 
@@ -270,8 +288,8 @@ header {
   height: 48px;
   width: 127.04px;
   bottom: 10px;
-  margin-left: -170px;
-  margin-top: 70px;
+  margin-left: 0.2rem;
+  margin-top: 2rem;
   padding: 0;
   gap: 10px;
   letter-spacing: 0.48px;
@@ -287,6 +305,13 @@ header {
   background-color: #2230d2;
   color: #fff;
 }
+
+.see-button:hover {
+  color: #fff;
+  background: #396df2;
+  transition: 1.2s;
+}
+
 
 /* About Section */
 .about {
@@ -342,9 +367,9 @@ header {
   font-style: normal;
   font-size: 16px;
   font-weight: 700;
-  margin-left: -95px;
+  margin-left: 0.1rem;
   margin-right: 109px;
-  padding-top: 10px;
+  padding-top: 1.5rem;
   margin-top: -20px;
   line-height: 24px;
   color: #7f8cff;
@@ -360,9 +385,9 @@ header {
   flex-grow: 0;
   list-style: none;
   width: 10.636rem;
-  margin-left: -175px;
+  margin-left: -2.8rem;
   margin-right: 30px;
-  margin-top: -5px;
+  margin-top: 1rem;
   gap: 8px;
 }
 
@@ -380,10 +405,9 @@ header {
   align-items: center;
   letter-spacing: 0.03em;
   border-radius: 8px;
-  bottom: 10px;
-  margin-left: -170px;
+  margin-left: 0.2rem;
   margin-right: -25px;
-  margin-top: 10px;
+  margin-top: 1.5rem;
   padding: 12px;
   gap: 10px;
   line-height: 24px;
@@ -403,7 +427,11 @@ header {
   background-color: #2230d2;
   color: #fff;
 }
-
+.see-button2:hover {
+  color: #fff;
+  background: #396df2;
+  transition: 1.2s;
+}
 .skill-set {
   display: flex;
   flex-direction: column;
@@ -817,13 +845,19 @@ input {
     border: 1px solid #dfe1e6;
     margin-top: 100px;
     height: 60vh;
+    width: 100%;
   }
 
   .project-img {
     width: 32rem;
     height: 28rem;
+    transition: transform 0.2s ease-out;
   }
-
+  
+  .project-img:hover {
+    transform: scale(1.1);
+  }
+  
   .wrap {
     display: flex;
     flex-direction: column;
@@ -850,8 +884,12 @@ input {
     margin-left: -5.3rem;
   }
 
+  .languages-list {
+    margin-left: -5.3rem;
+    margin-top: -8.5rem;
+  }
   .see-button {
-    margin-left: -5.69rem;
+    margin-left: -5.4rem;
   }
 
   .order-2 {
