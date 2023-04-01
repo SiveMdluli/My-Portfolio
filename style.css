@@ -7,11 +7,13 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   height: 48px;
   margin-left: 6px;
   margin-top: -7px;
+  gap: 38%;
+  position: fixed;
 }
 
 #logo {
@@ -29,8 +31,17 @@ header {
   text-decoration: none;
 }
 
+.name-logo {
+  color: #6070ff;
+  transition: all 1s;
+}
+
+.name-logo:hover {
+  transform: rotate(360deg);
+}
+
 #nav-items {
-  display: none !important;
+  display: none;
 }
 
 .header-info-secion {
@@ -114,6 +125,11 @@ header {
   order: 3;
 }
 
+#social-icons li:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+}
+
 /* ----The Work Section */
 .work {
   background: #e5e5e5;
@@ -122,21 +138,22 @@ header {
   margin-top: 6rem;
 }
 
-.card-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px;
-  gap: 12px;
-  background: #fff;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  width: 327px;
-  height: 552px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 6px;
+@media only screen and (min-width: 375px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    width: 20rem;
+    height: 552px;
+    order: 0;
+    flex-grow: 0;
+    margin: 6px;
+  }
 }
 
 .project-img {
@@ -167,10 +184,10 @@ header {
   width: 236px;
   height: 32px;
   padding: 0.5rem;
-  margin-top: -30px;
+  margin-top: -0.9rem;
   margin-bottom: 0;
   margin-right: 0;
-  margin-left: -50px;
+  margin-left: -0.2rem;
 }
 
 .description {
@@ -197,9 +214,9 @@ header {
   height: 20px;
   list-style: none;
   order: 2;
-  margin-top: -110px;
+  margin-top: 3rem;
   margin-bottom: 0;
-  margin-left: -90px;
+  margin-left: -0.01rem;
   margin-right: 0;
 }
 
@@ -269,8 +286,8 @@ header {
   height: 48px;
   width: 127.04px;
   bottom: 10px;
-  margin-left: -170px;
-  margin-top: 70px;
+  margin-left: 0.2rem;
+  margin-top: 2rem;
   padding: 0;
   gap: 10px;
   letter-spacing: 0.48px;
@@ -280,6 +297,7 @@ header {
 .see-button:hover {
   background-color: #6070ff;
   color: #fff;
+  transition: 1.2s;
 }
 
 .see-button:active {
@@ -293,7 +311,6 @@ header {
   flex-direction: column;
   align-items: center;
   border-top-right-radius: 60px;
-  border-bottom-left-radius: 60px;
   width: 370px;
   height: 1150px;
   background-color: #fff;
@@ -341,9 +358,9 @@ header {
   font-style: normal;
   font-size: 16px;
   font-weight: 700;
-  margin-left: -95px;
+  margin-left: 0.1rem;
   margin-right: 109px;
-  padding-top: 10px;
+  padding-top: 1.5rem;
   margin-top: -20px;
   line-height: 24px;
   color: #7f8cff;
@@ -359,9 +376,9 @@ header {
   flex-grow: 0;
   list-style: none;
   width: 10.636rem;
-  margin-left: -175px;
+  margin-left: -2.8rem;
   margin-right: 30px;
-  margin-top: -5px;
+  margin-top: 1rem;
   gap: 8px;
 }
 
@@ -379,10 +396,9 @@ header {
   align-items: center;
   letter-spacing: 0.03em;
   border-radius: 8px;
-  bottom: 10px;
-  margin-left: -170px;
+  margin-left: 0.2rem;
   margin-right: -25px;
-  margin-top: 10px;
+  margin-top: 1.5rem;
   padding: 12px;
   gap: 10px;
   line-height: 24px;
@@ -396,6 +412,7 @@ header {
 .see-button2:hover {
   background-color: #6070ff;
   color: #fff;
+  transition: 1.2s;
 }
 
 .see-button2:active {
@@ -742,4 +759,325 @@ input {
 #get-in-touch:active {
   background-color: #2230d2;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  header {
+    display: flex;
+  }
+
+  .navbar .humburger {
+    display: none;
+  }
+
+  #nav-items {
+    display: flex;
+    gap: 15%;
+  }
+
+  .nav-item a {
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2rem;
+  }
+
+  .header-info-secion {
+    background-image: url(img/Header\ bg.png);
+    background-size: cover;
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10%;
+  }
+
+  .greeting-hearder {
+    width: 100%;
+  }
+
+  .greeting-text {
+    width: 75%;
+    height: auto;
+  }
+
+  /* Desktop Work section */
+  .work {
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 86.5%;
+    margin: 10px 0 0 28px;
+    height: auto;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    margin-top: 100px;
+    height: 60vh;
+    width: 100%;
+  }
+
+  .project-img {
+    width: 32rem;
+    height: 28rem;
+    transition: transform 0.2s ease-out;
+  }
+
+  .project-img:hover {
+    transform: scale(1.1);
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 2%;
+    margin-left: 10%;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .card-tittle {
+    margin-top: -15rem;
+    margin-left: -5.5rem;
+  }
+
+  .frame2-img {
+    margin-top: -1rem;
+    margin-left: -5.7rem;
+  }
+
+  .description {
+    margin-top: -0.25rem;
+    width: 85%;
+    margin-left: -5.3rem;
+  }
+
+  .languages-list {
+    margin-left: -5.3rem;
+    margin-top: -8.5rem;
+  }
+
+  .see-button {
+    margin-left: -5.4rem;
+  }
+
+  .order-2 {
+    order: 2;
+  }
+
+  /* About Section Desktop */
+  .about {
+    display: grid;
+    flex-direction: row;
+    width: 100%;
+    height: 90vh;
+  }
+
+  .left-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: -2rem;
+  }
+
+  .about-h1 {
+    display: flex;
+    white-space: nowrap;
+    margin-left: 10%;
+    width: 100%;
+    margin-top: -2.9rem;
+  }
+
+  .info-summary {
+    margin-left: 10%;
+    width: 27.2rem;
+    height: 102px;
+    margin-top: -2rem;
+  }
+
+  .connect2 {
+    margin-left: 10%;
+    margin-top: 0.5rem;
+  }
+
+  #social-icons2 {
+    margin-left: 7%;
+  }
+
+  .see-button2 {
+    margin-left: 10%;
+  }
+
+  .skill-set {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    float: right;
+    margin-left: 35rem;
+    margin-top: -45rem;
+  }
+
+  .down-arrow {
+    margin-left: 41rem;
+  }
+
+  .language-list-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .language-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+  }
+
+  .js2 {
+    display: flex;
+    flex-direction: column;
+    width: 7.5rem;
+    height: 8rem;
+  }
+
+  .js-logo {
+    height: 4.5rem;
+    width: 4.4rem;
+  }
+
+  .js-text {
+    align-self: center;
+    margin-top: 5.6rem;
+    margin-left: -1.5rem;
+  }
+
+  .html2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -0.1rem;
+    width: 7.5rem;
+    height: 8rem;
+  }
+
+  .html-logo {
+    height: 4.5rem;
+    width: 4.4rem;
+  }
+
+  .html-text {
+    align-self: center;
+    margin-top: 5.8rem;
+    margin-left: -2.69rem;
+  }
+
+  .css2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.021rem;
+    width: 7.5rem;
+    height: 8rem;
+  }
+
+  .css-logo {
+    height: 4.5rem;
+    width: 4.4rem;
+  }
+
+  .css-text {
+    align-self: center;
+    margin-top: 5.5rem;
+    margin-left: -3.4rem;
+  }
+
+  .frameworks-text {
+    margin-left: 46.2rem;
+    margin-top: 6.2rem;
+  }
+
+  .right-arrow {
+    margin-left: 4rem;
+    margin-top: 6rem;
+  }
+
+  .separator-bottom {
+    margin-left: -28.5rem;
+  }
+
+  .skills-text {
+    margin-left: 46.2rem;
+    margin-top: 9.7rem;
+  }
+
+  .right-arrow2 {
+    margin-left: -5rem;
+    margin-top: 9.8rem;
+  }
+
+  .separator-bottom2 {
+    margin-left: -37.3rem;
+    margin-top: -0.5rem;
+  }
+
+  /* Contact Section Desktop */
+
+  .contact-section {
+    width: 100%;
+    background-image: url(img/contact\ form\ background\ shapes@2x.png);
+  }
+
+  .text-container {
+    width: 100%;
+  }
+
+  .contact-description {
+    width: 33%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  #name {
+    width: 27rem;
+    border-radius: 0;
+  }
+
+  #email {
+    width: 27rem;
+    border-radius: 0;
+  }
+
+  #msg {
+    width: 27rem;
+    border-radius: 0;
+  }
+
+  #get-in-touch {
+    margin-left: 30%;
+    border: none;
+  }
+
+  #get-in-touch:hover {
+    background-color: #2230d2;
+  }
 }
