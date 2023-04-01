@@ -7,11 +7,13 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   height: 48px;
   margin-left: 6px;
   margin-top: -7px;
+  gap: 38%;
+  position: fixed;
 }
 
 #logo {
@@ -30,7 +32,7 @@ header {
 }
 
 #nav-items {
-  display: none !important;
+  display: none;
 }
 
 .header-info-secion {
@@ -131,9 +133,8 @@ header {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  width: 327px;
+  width: 100%;
   height: 552px;
-  flex: none;
   order: 0;
   flex-grow: 0;
   margin: 6px;
@@ -742,4 +743,310 @@ input {
 #get-in-touch:active {
   background-color: #2230d2;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  header {
+    display: flex;
+  }
+
+  .navbar .humburger {
+    display: none;
+  }
+
+  #nav-items {
+    display: flex;
+    gap: 15%;
+  }
+
+  .nav-item a {
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2rem;
+  }
+
+  .header-info-secion {
+    background-image: url(img/Header\ bg.png);
+    background-size: cover;
+  }
+
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10%;
+  }
+
+  .greeting-hearder {
+    width: 100%;
+  }
+
+  .greeting-text {
+    width: 75%;
+    height: auto;
+  }
+
+  /* Desktop Work section */
+  .work {
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 86.5%;
+    margin: 10px 0 0 28px;
+    height: auto;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    margin-top: 100px;
+    height: 60vh;
+  }
+
+  .project-img {
+    width: 32rem;
+    height: 28rem;
+  }
+
+  .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 2%;
+    margin-left: 10%;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .card-tittle {
+    margin-top: -15rem;
+    margin-left: -5.5rem;
+  }
+
+  .frame2-img {
+    margin-top: -1rem;
+    margin-left: -5.7rem;
+  }
+
+  .description {
+    margin-top: -0.25rem;
+    width: 85%;
+    margin-left: -5.3rem;
+  }
+
+  .see-button {
+    margin-left: -5.69rem;
+  }
+
+  .order-2 {
+    order: 2;
+  }
+
+  /* About Section Desktop */
+  .about {
+    display: grid;
+    flex-direction: row;
+    width: 100%;
+    height: 90vh;
+  }
+
+  .left-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .about-h1 {
+    display: flex;
+    white-space: nowrap;
+    margin-left: 10%;
+    width: 100%;
+  }
+
+  .info-summary {
+    margin-left: 10%;
+    width: 447px;
+    height: 102px;
+  }
+
+  .connect2 {
+    margin-left: 10%;
+  }
+
+  #social-icons2 {
+    margin-left: 7%;
+  }
+
+  .see-button2 {
+    margin-left: 10%;
+  }
+
+  .skill-set {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    float: right;
+    margin-left: 35rem;
+    margin-top: -45rem;
+  }
+
+  .down-arrow {
+    margin-left: 41rem;
+  }
+
+  .language-list-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .language-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+  }
+
+  .js2 {
+    display: flex;
+    flex-direction: column;
+    width: 7.5rem;
+    height: 8rem;
+  }
+
+  .js-logo {
+    height: 4.5rem;
+    width: 4.4rem;
+  }
+
+  .js-text {
+    align-self: center;
+    margin-top: 5.6rem;
+    margin-left: -1.5rem;
+  }
+
+  .html2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -0.1rem;
+    width: 7.5rem;
+    height: 8rem;
+  }
+
+  .html-logo {
+    height: 4.5rem;
+    width: 4.4rem;
+  }
+
+  .html-text {
+    align-self: center;
+    margin-top: 5.8rem;
+    margin-left: -2.69rem;
+  }
+
+  .css2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+    width: 7.5rem;
+    height: 8rem;
+  }
+
+  .css-logo {
+    height: 4.5rem;
+    width: 4.4rem;
+  }
+
+  .css-text {
+    align-self: center;
+    margin-top: 5.5rem;
+    margin-left: -3.4rem;
+  }
+
+  .frameworks-text {
+    margin-left: 46.2rem;
+    margin-top: 6.2rem;
+  }
+
+  .right-arrow {
+    margin-left: 4rem;
+    margin-top: 6rem;
+  }
+
+  .separator-bottom {
+    margin-left: -28.5rem;
+  }
+
+  .skills-text {
+    margin-left: 46.2rem;
+    margin-top: 9.7rem;
+  }
+
+  .right-arrow2 {
+    margin-left: -5rem;
+    margin-top: 9.8rem;
+  }
+
+  .separator-bottom2 {
+    margin-left: -37.3rem;
+    margin-top: -0.5rem;
+  }
+
+  /* Contact Section Desktop */
+
+  .contact-section {
+    width: 100%;
+    background-image: url(img/contact\ form\ background\ shapes@2x.png);
+  }
+
+  .text-container {
+    width: 100%;
+  }
+
+  .contact-description {
+    width: 33%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  #name {
+    width: 27rem;
+    border-radius: 0;
+  }
+
+  #email {
+    width: 27rem;
+    border-radius: 0;
+  }
+
+  #msg {
+    width: 27rem;
+    border-radius: 0;
+  }
+
+  #get-in-touch {
+    margin-left: 30%;
+    border: none;
+  }
+
+  #get-in-touch:hover {
+    background-color: #2230d2;
+  }
 }
