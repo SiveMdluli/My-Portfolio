@@ -31,7 +31,6 @@ header {
   text-decoration: none;
 }
 
-
 .name-logo {
   color: #6070ff;
   transition: all 1s;
@@ -139,7 +138,7 @@ header {
   margin-top: 6rem;
 }
 
-@media only screen and (min-width: 400px){
+@media only screen and (min-width: 400px) {
   .card-container {
     display: flex;
     flex-direction: column;
@@ -155,8 +154,7 @@ header {
     flex-grow: 0;
     margin: 6px;
   }
- }
-
+}
 
 .project-img {
   width: 295px;
@@ -299,19 +297,13 @@ header {
 .see-button:hover {
   background-color: #6070ff;
   color: #fff;
+  transition: 1.2s;
 }
 
 .see-button:active {
   background-color: #2230d2;
   color: #fff;
 }
-
-.see-button:hover {
-  color: #fff;
-  background: #396df2;
-  transition: 1.2s;
-}
-
 
 /* About Section */
 .about {
@@ -421,17 +413,14 @@ header {
 .see-button2:hover {
   background-color: #6070ff;
   color: #fff;
+  transition: 1.2s;
 }
 
 .see-button2:active {
   background-color: #2230d2;
   color: #fff;
 }
-.see-button2:hover {
-  color: #fff;
-  background: #396df2;
-  transition: 1.2s;
-}
+
 .skill-set {
   display: flex;
   flex-direction: column;
@@ -853,11 +842,11 @@ input {
     height: 28rem;
     transition: transform 0.2s ease-out;
   }
-  
+
   .project-img:hover {
     transform: scale(1.1);
   }
-  
+
   .wrap {
     display: flex;
     flex-direction: column;
@@ -888,6 +877,7 @@ input {
     margin-left: -5.3rem;
     margin-top: -8.5rem;
   }
+
   .see-button {
     margin-left: -5.4rem;
   }
