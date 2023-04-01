@@ -870,6 +870,7 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: -2rem;
   }
 
   .about-h1 {
@@ -877,16 +878,19 @@ input {
     white-space: nowrap;
     margin-left: 10%;
     width: 100%;
+    margin-top: -2.9rem;
   }
 
   .info-summary {
     margin-left: 10%;
-    width: 447px;
+    width: 27.2rem;
     height: 102px;
+    margin-top: -2rem;
   }
 
   .connect2 {
     margin-left: 10%;
+    margin-top: 0.5rem;
   }
 
   #social-icons2 {
