@@ -818,12 +818,17 @@ input {
     margin-top: 100px;
     height: 60vh;
   }
-
+  /* The size of the project images increases slightly when you hover them */
   .project-img {
     width: 32rem;
     height: 28rem;
+    transition: transform 0.2s ease-out;
   }
-
+  
+  .project-img:hover {
+    transform: scale(1.1);
+  }
+  
   .wrap {
     display: flex;
     flex-direction: column;
