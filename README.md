@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -43,6 +44,14 @@
 - [Setting up Linters properly]
 - [Adding Index.html and style.css]
 - [styling contents with regards to mobile first design]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://sivemdluli.github.io/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -92,7 +101,7 @@ To run tests, run the following command:
 
 You can deploy this project using:
 
-- Github tools
+- Github pages
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
