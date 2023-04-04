@@ -88,8 +88,6 @@ Install this project with:
 
 - npm install
 
-
-
 ### Run tests
 
 To run tests, run the following command:
