@@ -14,6 +14,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [Portfolio Outline](#Portfolio-Outline)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
@@ -44,6 +45,13 @@
 - [Setting up Linters properly]
 - [Adding Index.html and style.css]
 - [styling contents with regards to mobile first design]
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Presentation of Portfolio -->
+## 🚀 Portfolio Outline <a name="Portfolio Outline"></a>
+
+- [Loom Presentation link](https://www.loom.com/share/f8cf57f2f3a54c838f9d5cea768b230e)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -87,8 +95,6 @@ Example commands:
 Install this project with:
 
 - npm install
-
-
 
 ### Run tests
 
