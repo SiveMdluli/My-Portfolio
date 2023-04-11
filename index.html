@@ -22,12 +22,14 @@
     <header>
         <a href="#" id="logo" class="name-logo">Sive</a>
         <nav class="navbar">
-            <img src="icons/union.png" alt="humburger" class="humburger">
-            <ul id="nav-items">
-                <li class="nav-item"><a href="#">Portfolio</a></li>
-                <li class="nav-item"><a href="#">About</a></li>
-                <li class="nav-item"><a href="#">Contact</a></li>
+            <ul id="navMenu">
+                <li onclick="closeMenu()" class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+                <li onclick="closeMenu()" class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li onclick="closeMenu()" class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <i id="close" class="fas fa-times" onclick="closeMenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars humburger" id="open" onclick="openMenu()"></i>
+
         </nav>
     </header>
 
@@ -252,6 +254,7 @@
             </ul>
         </form>
     </section>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>

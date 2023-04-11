@@ -44,6 +44,82 @@ header {
   display: none;
 }
 
+
+nav ul li {
+  list-style: none;
+  display: block;
+  margin: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  height: 24px;
+  width: 251px;
+  left: 0;
+  top: 8px;
+  font-size: 32px;
+  font-weight: 550;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+nav ul li ::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #6070ff;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul {
+  background: #6070ff;
+  position: fixed;
+  top: 0;
+  right: -768px;
+  width: 100%;
+  height: 100vh;
+  padding-top: 50px;
+  z-index: 2;
+  transition: right 1s;
+  opacity: 0.95;
+}
+
+#close {
+  position: absolute;
+  right: 45px;
+  top: 20px;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  border-radius: 0;
+  color: #fff;
+  font-size: 25px;
+}
+
+#open {
+  display: block;
+  font-size: 25px;
+  top: 40px;
+  border-radius: 0;
+  color: #6070ff;
+  right: 60px;
+}
+
+.humburger {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #6070ff;
+}
 .header-info-secion {
   display: flex;
   justify-content: center;
