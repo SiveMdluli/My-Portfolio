@@ -18,18 +18,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
     <header>
-        <a href="#" id="logo" class="name-logo">Sive</a>
-        <nav class="navbar">
-            <ul id="navMenu">
-                <li onclick="closeMenu()" class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-                <li onclick="closeMenu()" class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li onclick="closeMenu()" class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                <i id="close" class="fas fa-times" onclick="closeMenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars humburger" id="open" onclick="openMenu()"></i>
+        <a href="index.html" id="logo" class="name-logo">Sive</a>
 
+        <div id="sideNav" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#work" class="side-items" onclick="closeNav()">Portfolio</a>
+            <a href="#about" class="side-items" onclick="closeNav()">About</a>
+            <a href="#contact" class="side-items" onclick="closeNav()">Contact</a>
+        </div>
+        <nav class="navbar">
+            <span onclick="openNav()">
+                <img src="icons/union.png" alt="humburger" class="humburger openbtn">
+            </span>
+            <ul id="nav-items">
+                <li class="nav-item"><a href="#work">Portfolio</a></li>
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -66,7 +73,7 @@
     </section>
 
     <!-- Work Section -->
-    <section class="work">
+    <section class="work" id="work">
         <div class="card-container">
             <img src="img/Snapshoot Portfolio desktop.png" alt="Project Snapshoot" class="project-img">
             <!-- <img src="img/Snapshoot Portfolio desktop.png" alt="desktop image" class="desktop-image"> -->
@@ -149,14 +156,16 @@
     </section>
 
     <!-- About section -->
-    <section class="about">
+    <section class="about" id="about">
         <div class="left-grid">
             <h1 class="about-h1">About Myself</h1>
-            <p class="info-summary">Hello I’m a software developer! I can help you build a product , feature or website Look
-                through some of my work and experience! If you like what you see and have a project you need coded, don’t
+            <p class="info-summary">Hello I’m a software developer! I can help you build a product , feature or website
+                Look
+                through some of my work and experience! If you like what you see and have a project you need coded,
+                don’t
                 hestiate to contact me.</p>
             <h4 class="connect2">LET'S CONNECT</h4>
-    
+
             <ul id="social-icons2">
                 <li class="github">
                     <img src="icons/Git.png" alt="GitHub Icon">
@@ -174,7 +183,7 @@
                     <img src="icons/Medium.png" alt="Medium Icon">
                 </li>
             </ul>
-    
+
             <button type="button" class="see-button2">Get my resume</button>
         </div>
 
@@ -219,11 +228,11 @@
                 </ul>
             </div>
         </div>
-        
+
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="text-container">
             <h2 class="contact-me-text">Contact me</h2>
             <p class="contact-description">If you have an application you are interested in developing, a feature that
@@ -254,7 +263,8 @@
             </ul>
         </form>
     </section>
-    <script type="text/javascript" src="script.js"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

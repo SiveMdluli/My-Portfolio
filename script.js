@@ -1,7 +1,9 @@
-const navMenu = document.getElementById("navMenu");
-function openMenu() {
-    navMenu.style.right = "0";
+function openNav(open) {
+  document.getElementById("sideNav").style.width = "100%";
+  return open;
 }
-function closeMenu() {
-    navMenu.style.right = "-768px";
+
+function closeNav(close) {
+  document.getElementById("sideNav").style.width = "0";
+  return close;
 }
