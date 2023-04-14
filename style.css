@@ -1130,6 +1130,7 @@ input {
 
   .errorMsg {
     font-family: "Poppins", sans-serif;
+    color: #fff;
   }
 
   #get-in-touch:hover {
