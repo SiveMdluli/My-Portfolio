@@ -6,7 +6,7 @@ function openNav(open) {
   return open;
 }
 
-document.getElementById('toggleSpan').onclick(openNav);
+// document.getElementById('toggleSpan').onclick(openNav);
 
 function closeNav(close) {
   document.getElementById('sideNav').style.width = '0';
@@ -14,7 +14,7 @@ function closeNav(close) {
   return close;
 }
 
-document.getElementById('sideNav').onclick(closeNav);
+// document.getElementById('sideNav').onclick(closeNav);
 
 const popup = document.getElementById('popupCard');
 const seebtn = document.getElementById('seeButton');
