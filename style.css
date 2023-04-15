@@ -171,6 +171,10 @@ header {
   order: 3;
 }
 
+.canopy-info li {
+  color: #7a869a;
+}
+
 #social-icons li:hover {
   transform: scale(1.5);
   transition: 0.5s;
@@ -868,36 +872,19 @@ input {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  
-
 }
 
-.canopy-info li {
-  color: #7a869a;
-}
 .canopy-text {
   color: #344563 !important;
   font-weight: 500;
 }
+
 .lang-popup {
   margin-bottom: 7rem;
 }
 
 .seeLive {
   margin-right: 7rem;
-
-}
-
-.seeLive img {
-
-}
-
-.seeSource {
-
-}
-
-.seeSource img {
-
 }
 
 @media screen and (min-width: 768px) {
@@ -1241,6 +1228,7 @@ input {
     display: flex;
     width: 100%;
   }
+
   .popup-img img {
     /* display: grid; */
     margin-left: auto;
@@ -1259,5 +1247,4 @@ input {
     font-size: 16px;
     line-height: 30px;
   }
-
 }
