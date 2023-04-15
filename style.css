@@ -807,6 +807,99 @@ input {
   color: #fff;
 }
 
+/* POPUP MODAL STYLES */
+
+.popup-div {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 40%);
+}
+
+.inner-popup {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 16px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.popout {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.popout:hover,
+.popout:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-text {
+  height: 220px;
+  width: 311px;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.inner-popup h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+.canopy-info {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  
+
+}
+
+.canopy-info li {
+  color: #7a869a;
+}
+.canopy-text {
+  color: #344563 !important;
+  font-weight: 500;
+}
+.lang-popup {
+  margin-bottom: 7rem;
+}
+
+.seeLive {
+  margin-right: 7rem;
+
+}
+
+.seeLive img {
+
+}
+
+.seeSource {
+
+}
+
+.seeSource img {
+
+}
+
 @media screen and (min-width: 768px) {
   html,
   body {
@@ -1136,4 +1229,35 @@ input {
   #get-in-touch:hover {
     background-color: #2230d2;
   }
+
+  /* DESKTOP POPUP STYLES */
+  .desktop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 100px;
+  }
+
+  .popup-img {
+    display: flex;
+    width: 100%;
+  }
+  .popup-img img {
+    /* display: grid; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 45rem;
+    size: cover;
+  }
+
+  .tags-and-buttons-container {
+    margin-left: 150px;
+  }
+
+  .popup-text {
+    width: 778px;
+    height: 382px;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
 }
