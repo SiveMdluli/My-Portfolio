@@ -129,36 +129,6 @@ window.onclick = function (event) {
   }
 };
 
-
-
-
-
-
-
-// CONTACT VALIDATION
-
-// const form = document.querySelector("form");
-// form.addEventListener("submit", handleSubmit);
-
-// function handleSubmit(event) {
-//   event.preventDefault();
-
-//   const emailInput = document.querySelector("#email");
-//   const email = emailInput.value;
-
-//   if (email === email.toLowerCase()) {
-//     // If iy fits requirement[lowercase], ahead
-//     form.submit();
-//   } else {
-//     // Otherwise show dynamic error below
-//     const errorMessage = document.createElement("p");
-//     errorMessage.classList.add("errorMsg");
-//     errorMessage.textContent =
-//       "Opps! An error has occured, your email must be lowercase.";
-//     form.appendChild(errorMessage);
-//   }
-// }
-
 const form = document.querySelector("form");
 form.addEventListener("submit", handleSubmit);
 
@@ -184,40 +154,3 @@ errorMessage.textContent =
 form.appendChild(errorMessage);
 }
 }
-// LOCAL STORAGE FOR CONTACT FORM
-
-const formID = document.getElementById('form');
-
-const nameInput = document.getElementsByName('user_name');
-const emailInput = document.getElementsByName('user_mail');
-const messageInput = document.getElementsByName('msg');
-
-let formData = {
-  inputName: '',
-  inputEmail: '',
-  inputMessage: '',
-};
-
-if (localStorage.getItem('form-data')) {
-  formData = JSON.parse(localStorage.getItem('form-data'));
-  nameInput[0].value = formData.inputName;
-  emailInput[0].value = formData.inputEmail;
-  messageInput[0].value = formData.inputMessage;
-}
-
-function updateFormData() {
-  formData.inputName = nameInput[0].value;
-  formData.inputEmail = emailInput[0].value;
-  formData.inputMessage = messageInput[0].value;
-  localStorage.setItem('form-data', JSON.stringify(formData));
-}
-
-nameInput[0].addEventListener('input', updateFormData);
-emailInput[0].addEventListener('input', updateFormData);
-messageInput[0].addEventListener('input', updateFormData);
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-  localStorage.setItem('form-data', JSON.stringify(formData));
-  form.submit();
-});
