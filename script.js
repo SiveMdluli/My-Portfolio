@@ -1,12 +1,16 @@
 function openNav(open) {
-  document.getElementById("sideNav").style.width = "100%";
+  document.getElementById('sideNav').style.width = '100%';
   return open;
 }
 
+document.getElementById('toggleSpan').onclick(openNav);
+
 function closeNav(close) {
-  document.getElementById("sideNav").style.width = "0";
+  document.getElementById('sideNav').style.width = '0';
   return close;
 }
+
+document.getElementById('sideNav').onclick(closeNav);
 
 const popup = document.getElementById('popupCard');
 const seebtn = document.getElementById('seeButton');
@@ -25,42 +29,47 @@ const seebtn3 = document.getElementById('seeButton3');
 const span3 = document.getElementsByClassName('close3')[0];
 
 // POPUP WINDOW
-const popups = [{
-  card: 1,
-  name: 'Tonic',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-  image: 'img/Snapshoot Portfolio desktop.png',
-  technologies: ['html', 'JavaScript', 'css'],
-  source: 'https://github.com/SiveMdluli/',
-  link: 'https://sivemdluli.github.io/',
-},
-{
-  card: 2,
-  name: 'Multi-Post Stories ',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-  image: 'img/Snapshoot Portfolio(1).png',
-  technologies: ['html', 'JavaScript', 'css'],
-  source: 'https://github.com/SiveMdluli/',
-  link: 'https://sivemdluli.github.io/',
-},
-{
-  card: 3,
-  name: 'Tonic',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essente',
-  image: 'img/Snapshoot Portfolio(2).png',
-  technologies: ['html', 'JavaScript', 'css'],
-  source: 'https://github.com/SiveMdluli/',
-  link: 'https://sivemdluli.github.io/',
-},
-{
-  card: 4,
-  name: 'Multi-Post Stories',
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-  image: 'img/Snapshoot Portfolio desktop 2.png',
-  technologies: ['html', 'JavaScript', 'css'],
-  source: 'https://github.com/SiveMdluli/',
-  link: 'https://sivemdluli.github.io/',
-},
+const popups = [
+  {
+    card: 1,
+    name: 'Tonic',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'img/Snapshoot Portfolio desktop.png',
+    technologies: ['html', 'JavaScript', 'css'],
+    source: 'https://github.com/SiveMdluli/',
+    link: 'https://sivemdluli.github.io/',
+  },
+  {
+    card: 2,
+    name: 'Multi-Post Stories ',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'img/Snapshoot Portfolio(1).png',
+    technologies: ['html', 'JavaScript', 'css'],
+    source: 'https://github.com/SiveMdluli/',
+    link: 'https://sivemdluli.github.io/',
+  },
+  {
+    card: 3,
+    name: 'Tonic',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essente',
+    image: 'img/Snapshoot Portfolio(2).png',
+    technologies: ['html', 'JavaScript', 'css'],
+    source: 'https://github.com/SiveMdluli/',
+    link: 'https://sivemdluli.github.io/',
+  },
+  {
+    card: 4,
+    name: 'Multi-Post Stories',
+    description:
+      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    image: 'img/Snapshoot Portfolio desktop 2.png',
+    technologies: ['html', 'JavaScript', 'css'],
+    source: 'https://github.com/SiveMdluli/',
+    link: 'https://sivemdluli.github.io/',
+  },
 ];
 
 // Trigger card 0
@@ -129,28 +138,26 @@ window.onclick = function (event) {
   }
 };
 
-const form = document.querySelector("form");
-form.addEventListener("submit", handleSubmit);
-
+const form = document.querySelector('form');
 function handleSubmit(event) {
-event.preventDefault();
+  event.preventDefault();
 
-const emailInput = document.querySelector("#email");
-const email = emailInput.value;
+  const emailInput = document.querySelector('#email');
+  const email = emailInput.value;
 
-if (email === email.toLowerCase()) {
-// If it fits requirement[lowercase], ahead
-form.submit();
-} else {
-// Otherwise show dynamic error below
-let errorMessage = form.querySelector('.errorMsg');
-if (errorMessage) {
-form.removeChild(errorMessage);
+  if (email === email.toLowerCase()) {
+    // If it fits requirement[lowercase], ahead
+    form.submit();
+  } else {
+    // Otherwise show dynamic error below
+    let errorMessage = form.querySelector('.errorMsg');
+    if (errorMessage) {
+      form.removeChild(errorMessage);
+    }
+    errorMessage = document.createElement('p');
+    errorMessage.classList.add('errorMsg');
+    errorMessage.textContent = 'Oops! An error has occurred, your email must be lowercase.';
+    form.appendChild(errorMessage);
+  }
 }
-errorMessage = document.createElement("p");
-errorMessage.classList.add("errorMsg");
-errorMessage.textContent =
-"Oops! An error has occurred, your email must be lowercase.";
-form.appendChild(errorMessage);
-}
-}
+form.addEventListener('submit', handleSubmit);
