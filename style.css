@@ -180,14 +180,10 @@ header {
   transition: 0.5s;
 }
 
-/* Work Section[Rendered from JavaScript] STYLES */
-/* .modal-blur {
-  filter: blur(5px);
-} */
+
 
 .works {
-/* Tweak changes */
-  /* grid-template-columns: repeat(auto-fit, minmax(clamp(100%/(var(--n) + 1) + 0.1%, (var(--w) - 100vw) * 1000, 100%), 1fr)); */
+
   display: grid;
   column-gap: 24px;
   row-gap: 5.5rem;
@@ -319,18 +315,7 @@ a {
   transition: 0.3s ease;
 }
 
-/* .work-btn:disabled {
-  color: #7d7c84;
-  border: 1px solid #dfe1e6;
-  background-color: #fff;
-}
 
-.work-btn:hover {
-  color: #396df2;
-  background-color: #fff;
-  transform: scale(1.2);
-  transition: 0.3s ease;
-} */
 
 .project-wrapper {
   position: fixed;
