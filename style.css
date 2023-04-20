@@ -181,7 +181,6 @@ header {
 }
 
 .works {
-
   display: grid;
   column-gap: 24px;
   row-gap: 5.5rem;
@@ -298,6 +297,10 @@ a {
   line-height: 133%;
 }
 
+.modal-blur {
+  filter: blur(5px);
+}
+
 /* * Interactive Card Buttons * */
 .work-btn:hover {
   background: #6070ff;
@@ -312,8 +315,6 @@ a {
   color: #fff;
   transition: 0.3s ease;
 }
-
-
 
 .project-wrapper {
   position: fixed;
@@ -408,6 +409,78 @@ a {
 }
 
 
+.card-container.image-card .work-title {
+  max-width: 90%;
+  font-size: 18px;
+}
+
+.card-container.image-card .card-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-container.image-card .card-btns {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-container.image-card  .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card-container.image-card > .card-image {
+  width: 90%;
+  object-fit: cover;
+  margin-inline: auto;
+}
+
+.card-container.image-card .card-description {
+  overflow: auto;
+  max-height: 33vh;
+  line-height: 200%;
+}
+
+.card-container.image-card .card-lang {
+  font-size: 10px;
+}
+
+.card-container.image-card .work-btn {
+  font-size: 12px;
+}
+
+
+/* Modal styles */
+
+@media only screen and (min-width: 375px) {
+  .work-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 133%;
+    color: #172b4d;
+  }
+
+  .card-container.image-card .work-title {
+    font-size: 32px;
+    line-height: 133%;
+  }
+
+  .card-container.image-card .card-description {
+    max-height: 35vh;
+  }
+
+  .card-container.image-card .card-lang {
+    font-size: 12px;
+  }
+
+  .card-container.image-card .work-btn {
+    font-size: 15px;
+  }
+}
 /* About Section */
 .about {
   display: flex;
@@ -1037,76 +1110,146 @@ input {
     height: auto;
   }
 
-  /* Desktop Work section */
-  .work {
+
+  /* Work Section Dynamic styles */
+
+  .works {
+    /* grid-template-columns: repeat(auto-fit, minmax(clamp(100%/(var(--n) + 1) + 0.1%, (var(--w) - 100vw) * 1000, 100%), 1fr)); */
+    padding: 142px 142px;
     display: grid;
-    display: flex;
-    flex-direction: column;
+    column-gap: 24px;
+    row-gap: 88px;
     justify-content: center;
-    width: 86.5%;
-    margin: 10px 0 0 28px;
+  }
+
+  .work {
+    padding: 24px;
+    gap: 22px;
+    align-items: center;
+    border: 0.1px solid #dfe1e6;
+    border-radius: 24px;
+    background-color: #fff;
+    flex-flow: row;
+    flex-grow: 0;
+    width: calc(100vw - 284px);
+    box-shadow: 0 8px 16px var(--font-form-label);
+  }
+
+  .works img {
+    width: calc(50%);
     height: auto;
   }
 
-  .card-container {
-    display: flex;
-    flex-direction: row;
-    padding: 5%;
-    background: #fff;
-    border: 1px solid #dfe1e6;
-    margin-top: 100px;
-    height: 60vh;
-    width: 100%;
+  .card-image {
+    width: calc(50%);
+    padding: 24px;
+    gap: clamp(24px, (1300px - 100vw) * 1000, 0px);
   }
 
-  .project-img {
-    width: 32rem;
-    height: 28rem;
-    transition: transform 0.2s ease-out;
-  }
-
-  .project-img:hover {
-    transform: scale(1.1);
-  }
-
-  .wrap {
+  .card-body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-left: 2%;
-    margin-left: 10%;
-    width: 100%;
-    margin-top: 5rem;
+    gap: 8px;
   }
 
-  .card-tittle {
-    margin-top: -15rem;
-    margin-left: -5.5rem;
+  .work:nth-child(even) {
+    flex-direction: row-reverse;
   }
 
-  .frame2-img {
-    margin-top: -1rem;
-    margin-left: -5.7rem;
+  .work:nth-child(even) .work-btn {
+    background: #2230d2;
+    color: #fff;
+    transition: 0.3s ease;
   }
 
-  .description {
-    margin-top: -0.25rem;
-    width: 85%;
-    margin-left: -5.3rem;
+  .work-title {
+    font-size: max(40px, 2.78vw);
+    line-height: 130%;
   }
 
-  .languages-list {
-    margin-left: -5.3rem;
-    margin-top: -8.5rem;
+  .card-description {
+    width: 91.51%;
+    font-size: max(16px, 1.1vw);
+    line-height: 150%;
+  }
+  .cap-title,
+  .cap-descrip {
+    font-size: max(18px, 1.25vw);
+    line-height: 133%;
   }
 
-  .see-button {
-    margin-left: -5.4rem;
+  .card-lang {
+    font-size: max(12px, 0.833vw);
   }
 
-  .order-2 {
-    order: 2;
+  /* Popup Modal Styles Desktop */
+  .project-wrapper {
+    padding-inline: 5vw;
+    padding-block: 5vh;
+    max-height: 100vh;
   }
+
+  .project-wrapper .card-container.image-card {
+    background-color: #fff;
+    padding-inline: 1.7vw;
+    padding-block: 1.7vh;
+    font-size: 32px;
+    height: 89vh;
+  }
+
+  .card-container.image-card .work-title {
+    max-width: 90%;
+    font-size: 32px;
+  }
+
+  .card-container.image-card .card-description {
+    max-height: 25vh;
+    max-width: 55vw;
+  }
+
+  .card-container.image-card .card-body {
+    flex-direction: row;
+    gap: 40px;
+    height: 100%;
+    align-items: center;
+  }
+
+  .card-container.image-card .card-footer {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .card-container.image-card .card-btns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 18px;
+  }
+
+  .card-container.image-card > .card-image {
+    height: 45vh;
+    width: 70%;
+  }
+
+  .card-container.image-card .card-lang {
+    font-size: 12px;
+  }
+
+  .card-container.image-card .work-btn {
+    font-size: 14px;
+  }
+
+  .work:nth-child(even) .work-btn:hover {
+    color: #396df2;
+    background-color: #fff;
+    box-shadow: none;
+    transform: scale(1.2);
+    transition: 0.3s ease;
+  }
+  
+
 
   /* About Section Desktop */
   .about {

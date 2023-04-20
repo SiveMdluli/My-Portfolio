@@ -28,7 +28,7 @@ const projects = [
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
     tags: ['HTML', 'CSS', 'JavaScript'],
     snapshot: 'img/Snapshoot Portfolio popup.svg',
-    connectionsBtn: ['./images/source-live-btn.svg', './images/source-github-btn.svg'],
+    connectionsBtn: ['icons/Icon.svg', 'icons/Vector.svg'],
     connectionstext: [livebtn, sourcebtn],
     connectionsURL: ['https://sivemdluli.github.io/', 'https://github.com/SiveMdluli/My-Portfolio/'],
   },
@@ -40,7 +40,7 @@ const projects = [
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
     tags: ['HTML', 'CSS', 'JavaScript'],
     snapshot: 'img/Snapshoot Portfolio popup1.svg',
-    connectionsBtn: ['./images/source-live-btn.svg', './images/source-github-btn.svg'],
+    connectionsBtn: ['icons/Icon.svg', 'icons/Vector.svg'],
     connectionstext: [livebtn, sourcebtn],
     connectionsURL: ['https://sivemdluli.github.io/', 'https://github.com/SiveMdluli/My-Portfolio/'],
   },
@@ -52,7 +52,7 @@ const projects = [
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
     tags: ['HTML', 'CSS', 'JavaScript'],
     snapshot: 'img/Snapshoot Portfolio popup2.svg',
-    connectionsBtn: ['./images/source-live-btn.svg', './images/source-github-btn.svg'],
+    connectionsBtn: ['icons/Icon.svg', 'icons/Vector.svg'],
     connectionstext: [livebtn, sourcebtn],
     connectionsURL: ['https://sivemdluli.github.io/', 'https://github.com/SiveMdluli/My-Portfolio/'],
   },
@@ -64,7 +64,7 @@ const projects = [
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
     tags: ['HTML', 'CSS', 'Ruby on Rails', 'JavaScript'],
     snapshot: 'img/Snapshoot Portfolio popup3.svg',
-    connectionsBtn: ['./images/source-live-btn.svg', './images/source-github-btn.svg'],
+    connectionsBtn: ['icons/Icon.svg', 'icons/Vector.svg'],
     connectionstext: [livebtn, sourcebtn],
     connectionsURL: ['https://sivemdluli.github.io/', 'https://github.com/SiveMdluli/My-Portfolio/'],
   },
@@ -79,7 +79,7 @@ const projects1 = [
       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
     tags: ['HTML', 'CSS', 'JavaScript'],
     snapshot: 'img/Snapshoot Portfolio popup.svg',
-    connectionsBtn: ['./images/source-live-btn.svg', './images/source-github-btn.svg'],
+    connectionsBtn: ['icons/Icon.svg', 'icons/Vector.svg'],
     connectionstext: [livebtn, sourcebtn],
     connectionsURL: ['https://sivemdluli.github.io/', 'https://github.com/SiveMdluli/My-Portfolio/'],
   },
@@ -91,7 +91,7 @@ const projects1 = [
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
     tags: ['HTML', 'CSS', 'JavaScript'],
     snapshot: 'img/Snapshoot Portfolio popup1.svg',
-    connectionsBtn: ['./images/source-live-btn.svg', './images/source-github-btn.svg'],
+    connectionsBtn: ['icons/Icon.svg', 'icons/Vector.svg'],
     connectionstext: [livebtn, sourcebtn],
     connectionsURL: ['https://sivemdluli.github.io/', 'https://github.com/SiveMdluli/My-Portfolio/'],
   },
@@ -103,7 +103,7 @@ const projects1 = [
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
     tags: ['HTML', 'CSS', 'JavaScript'],
     snapshot: 'img/Snapshoot Portfolio popup2.svg',
-    connectionsBtn: ['./images/source-live-btn.svg', './images/source-github-btn.svg'],
+    connectionsBtn: ['icons/Icon.svg', 'icons/Vector.svg'],
     connectionstext: [livebtn, sourcebtn],
     connectionsURL: ['https://sivemdluli.github.io/', 'https://github.com/SiveMdluli/My-Portfolio/'],
   },
@@ -115,7 +115,7 @@ const projects1 = [
     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.`,
     tags: ['HTML', 'CSS', 'Ruby on Rails', 'JavaScript'],
     snapshot: 'img/Snapshoot Portfolio popup3.svg',
-    connectionsBtn: ['./images/source-live-btn.svg', './images/source-github-btn.svg'],
+    connectionsBtn: ['icons/Icon.svg', 'icons/Vector.svg'],
     connectionstext: [livebtn, sourcebtn],
     connectionsURL: ['https://sivemdluli.github.io/', 'https://github.com/SiveMdluli/My-Portfolio/'],
   },
@@ -139,7 +139,7 @@ function projectModal(e) {
 
   const cardCloseBtn = document.createElement('span');
   cardCloseBtn.textContent = 'X';
-  cardCloseBtn.classList.add('close-popup');
+  cardCloseBtn.classList.add('close-popup', 'work-title');
 
   // Declaring card H2 and targeting 'name' of card form list above
   const cardTitle = document.createElement('h2');
