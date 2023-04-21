@@ -7,13 +7,14 @@ function openNav(open) {
   return open;
 }
 
-// document.getElementById('toggleSpan').onclick(openNav);
+document.getElementById('toggleSpan').onclick(openNav);
 
 function closeNav(close) {
   document.getElementById('sideNav').style.width = '0';
   sideNav.style.width = '0';
   return close;
 }
+document.getElementById('xOut').onclick(closeNav);
 
 /* Contact validation logic Section */
 const form = document.querySelector('form');
