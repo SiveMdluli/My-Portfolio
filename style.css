@@ -1052,7 +1052,7 @@ input {
     flex-flow: row;
     flex-grow: 0;
     width: calc(100vw - 284px);
-    box-shadow: 0 8px 16px var(--font-form-label);
+    box-shadow: 0 8px 16px #7d7c84;
   }
 
   .works img {
