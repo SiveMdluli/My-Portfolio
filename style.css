@@ -297,9 +297,9 @@ a {
   line-height: 133%;
 }
 
-.modal-blur {
+/* .modal-blur {
   filter: blur(5px);
-}
+} */
 
 /* * Interactive Card Buttons * */
 .work-btn:hover {
@@ -316,91 +316,12 @@ a {
   transition: 0.3s ease;
 }
 
-.project-wrapper {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  background-color: #fff0;
-  top: 0;
-  left: 0;
-  z-index: 20;
-  padding: max(16px, 4.3%);
-  padding-block: 2vh 5vh;
-  animation: fadeInProject 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
+
 
 .project-wrapper.out {
   animation: fadeOutProject 0.3s ease-out forwards;
 }
 
-@keyframes fadeInProject {
-  0% {
-    z-index: -3;
-    background: #fff0;
-  }
-
-  100% {
-    z-index: 20;
-    background: #c1c7d0be;
-  }
-}
-
-@keyframes fadOutnProject {
-  0% {
-    z-index: 20;
-    background: #c1c7d0be;
-  }
-
-  100% {
-    z-index: -3;
-    background: #fff0;
-  }
-}
-
-
-.project-wrapper .card-container.image-card {
-  background-color: #fff;
-  padding: 4.7%;
-  width: 100%;
-  border: 1px solid #dfe1e6;
-  border-radius: 16px;
-  opacity: 0%;
-  gap: 8px;
-  transform: scale(0.3);
-  animation: scaleUpProject 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
-}
-
-.close-popup {
-  cursor: pointer;
-}
-
-.project-wrapper .card-container.image-card {
-  animation: scaleDownProject 0.3s ease-out forwards;
-}
-
-@keyframes scaleUpProject {
-  0% {
-    transform: scale(0.3) translateY(1000px);
-    opacity: 0;
-  }
-
-  100% {
-    transform: scale(1) translateY(0);
-    opacity: 100%;
-  }
-}
-
-@keyframes scaleDownProject {
-  0% {
-    transform: scale(1) translateY(0);
-    opacity: 100%;
-  }
-
-  100% {
-    transform: scale(0.3) translateY(1000px);
-    opacity: 0;
-  }
-}
 
 .card-container.image-card .work-card-cont {
   display: flex;
@@ -1114,7 +1035,6 @@ input {
   /* Work Section Dynamic styles */
 
   .works {
-    /* grid-template-columns: repeat(auto-fit, minmax(clamp(100%/(var(--n) + 1) + 0.1%, (var(--w) - 100vw) * 1000, 100%), 1fr)); */
     padding: 142px 142px;
     display: grid;
     column-gap: 24px;
@@ -1180,57 +1100,6 @@ input {
 
   .card-lang {
     font-size: max(12px, 0.833vw);
-  }
-
-  /* Popup Modal Styles Desktop */
-  .project-wrapper {
-    padding-inline: 5vw;
-    padding-block: 5vh;
-    max-height: 100vh;
-  }
-
-  .project-wrapper .card-container.image-card {
-    background-color: #fff;
-    padding-inline: 1.7vw;
-    padding-block: 1.7vh;
-    font-size: 32px;
-    height: 89vh;
-  }
-
-  .card-container.image-card .work-title {
-    max-width: 90%;
-    font-size: 32px;
-  }
-
-  .card-container.image-card .card-description {
-    max-height: 25vh;
-    max-width: 55vw;
-  }
-
-  .card-container.image-card .card-body {
-    flex-direction: row;
-    gap: 40px;
-    height: 100%;
-    align-items: center;
-  }
-
-  .card-container.image-card .card-footer {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .card-container.image-card .card-btns {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 18px;
-  }
-
-  .card-container.image-card > .card-image {
-    height: 45vh;
-    width: 70%;
   }
 
   .card-container.image-card .card-lang {
