@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sive's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,13 +24,13 @@
         <a href="index.html" id="logo" class="name-logo">Sive</a>
 
         <div id="sideNav" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="javascript:void(0)" class="closebtn" id="xOut" onclick="closeNav()">×</a>
             <a href="#work" class="side-items" onclick="closeNav()">Portfolio</a>
             <a href="#about" class="side-items" onclick="closeNav()">About</a>
             <a href="#contact" class="side-items" onclick="closeNav()">Contact</a>
         </div>
         <nav class="navbar">
-            <span onclick="openNav()">
+            <span onclick="openNav()" id="toggleSpan">
                 <img src="icons/union.png" alt="humburger" class="humburger openbtn">
             </span>
             <ul id="nav-items">
@@ -41,7 +42,7 @@
     </header>
 
     <!-- Header Section -->
-    <section class="header-info-secion">
+    <section class="header-info-secion" id="intro">
 
         <div class="main-section">
             <h1 class="greeting-hearder">I’m Sive <br> Glad to see you!</h1>
@@ -71,88 +72,10 @@
             </ul>
         </div>
     </section>
+    <!-- Work Cards Section -->
+    <section id="projects">
 
-    <!-- Work Section -->
-    <section class="work" id="work">
-        <div class="card-container">
-            <img src="img/Snapshoot Portfolio desktop.png" alt="Project Snapshoot" class="project-img">
-            <div class="wrap">
-
-                <h2 class="card-tittle">Tonic</h2>
-                <div class="frame2-img">
-                    <img src="img/Frame 2.png" alt="">
-                </div>
-                <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups
-                    required.</p>
-                <ul class="languages-list">
-                    <li class="html">html</li>
-                    <li class="css">css</li>
-                    <li class="javascript">javascript</li>
-                </ul>
-
-                <button type="button" class="see-button">See Project</button>
-            </div>
-
-        </div>
-
-        <div class="card-container">
-            <img src="img/Snapshoot Portfolio(1).png" alt="Project Snapshoot" class="project-img order-2">
-            <div class="wrap">
-
-
-                <h2 class="card-tittle">Multi-Post Stories</h2>
-                <div class="frame2-img">
-                    <img src="img/Frame 2.png" alt="">
-                </div>
-                <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups
-                    required.</p>
-                <ul class="languages-list">
-                    <li class="html">html</li>
-                    <li class="css">css</li>
-                    <li class="javascript">javascript</li>
-                </ul>
-                <button type="button" class="see-button">See Project</button>
-            </div>
-
-        </div>
-
-        <div class="card-container">
-            <img src="img/Snapshoot Portfolio(2).png" alt="Project Snapshoot" class="project-img">
-            <div class="wrap">
-                <h2 class="card-tittle">Tonic</h2>
-                <div class="frame2-img">
-                    <img src="img/Frame 2.png" alt="">
-                </div>
-                <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups
-                    required.</p>
-                <ul class="languages-list">
-                    <li class="html">html</li>
-                    <li class="css">css</li>
-                    <li class="javascript">javascript</li>
-                </ul>
-                <button type="button" class="see-button">See Project</button>
-            </div>
-        </div>
-
-        <div class="card-container">
-            <img src="img/Snapshoot Portfolio desktop 2.png" alt="Project Snapshoot" class="project-img order-2">
-            <div class="wrap">
-                <h2 class="card-tittle">Multi-Post Stories</h2>
-                <div class="frame2-img">
-                    <img src="img/Frame 2.png" alt="">
-                </div>
-                <p class="description">A daily selection of privately personalized reads; no accounts or sign-ups
-                    required.</p>
-                <ul class="languages-list">
-                    <li class="html">html</li>
-                    <li class="css">css</li>
-                    <li class="javascript">javascript</li>
-                </ul>
-                <button type="button" class="see-button">See Project</button>
-            </div>
-        </div>
     </section>
-
     <!-- About section -->
     <section class="about" id="about">
         <div class="left-grid">
@@ -238,7 +161,7 @@
                 I’d love to help with it!</p>
         </div>
 
-        <form action="https://formspree.io/f/mnqygppw" method="post">
+        <form action="https://formspree.io/f/mnqygppw" method="post" id="form">
             <ul>
                 <li>
                     <label for="name"></label>
@@ -261,8 +184,9 @@
             </ul>
         </form>
     </section>
-
+    <div class="expandcard"></div>
     <script src="script.js"></script>
+    <script src="popup.js"></script>
 </body>
 
 </html>
