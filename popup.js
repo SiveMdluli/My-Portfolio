@@ -212,11 +212,11 @@ for (let i = 0; i < showButton.length; i += 1) {
     document.documentElement.scrollTop = 0;
 
     popUp.innerHTML = `
-        <section id="model-section">
+        <section id="modal-section">
         <div class="modal-body">
-          <div class="model-title">
+          <div class="modal-title">
             <h2 class="card-header">${popupInfo[i].header}</h2>
-            <i id="model-close" class="uil uil-multiply"><img src="img/cross.png"></i>
+            <i id="modal-close" class="uil uil-multiply"><img src="img/cross.png"></i>
             <ul class="card-sub">
               <li class="remove">${popupInfo[i].canopy}</li>
               <div class="bullet-point"><img src="img/Counter.svg" alt="Bullet Point"></div>
@@ -229,9 +229,9 @@ for (let i = 0; i < showButton.length; i += 1) {
           </div>
           <img class="image-img" src="${popupInfo[i].popupPhoto}" width="100%"/>       
           <div>
-            <div class="model-content">
+            <div class="modal-content">
               <p>${popupInfo[i].content}</p>
-              <div class="model-links-content">
+              <div class="modal-links-content">
                 <ul class="tools mobile-cat">
                   <li>${popupInfo[i].tools[0]}</li>
                   <li>${popupInfo[i].tools[1]}</li>
@@ -239,8 +239,8 @@ for (let i = 0; i < showButton.length; i += 1) {
                 </ul>
                 <div>
                   <hr class="line-break" />
-                  <div class="model-combine">
-                    <button class="model-button live">
+                  <div class="modal-combine">
+                    <button class="modal-button live">
                       See live
                       <svg
                         class="svg"
@@ -258,7 +258,7 @@ for (let i = 0; i < showButton.length; i += 1) {
                         />
                       </svg>
                     </button>
-                    <button class="model-button source">
+                    <button class="modal-button source">
                       See source
                       <span>
                       <svg
