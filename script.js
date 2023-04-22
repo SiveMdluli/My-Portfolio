@@ -6,7 +6,6 @@ function openNav(open) {
   sideNav.style.width = '100%';
   return open;
 }
-
 document.getElementById('toggleSpan').onclick(openNav);
 
 function closeNav(close) {

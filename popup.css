@@ -53,6 +53,8 @@
   padding: 16px;
   background-color: #fff;
   border-radius: 16px;
+  overflow-x: hidden;
+  overflow-y: scroll;
   z-index: 5;
 }
 
@@ -111,7 +113,7 @@
 }
 
 .card-content {
-  margin-top: 12px;
+  margin-top: -1rem;
 }
 
 .card-content > p {
@@ -138,7 +140,7 @@
 
 .card-sub {
   list-style: none;
-  margin-top: 12px;
+  margin-top: -1.2rem;
   padding-left: 0%;
   display: flex;
   justify-content: flex-start;
@@ -394,6 +396,7 @@ small {
   .modal-body {
     width: 702px;
     height: 625px;
+    overflow: scroll;
   }
 
   nav a:link,
@@ -410,7 +413,10 @@ small {
   }
 
   .image-img {
-    height: 320px;
+    height: 472px;
+    width: 692px;
+    align-self: center;
+    margin-top: 0.5rem;
   }
 
   span {
@@ -429,11 +435,15 @@ small {
     grid-template-columns: 60% 40%;
     column-gap: 20px;
     padding: 10px;
+    align-items: center;
+    margin-top: -1rem;
+    top: 0;
   }
 
   .modal-content > p {
     font-size: 15px;
     color: #344563;
+    margin-top: 3rem;
   }
 
   .modal-combine {
@@ -469,7 +479,7 @@ small {
   }
 
   .card-sub {
-    margin-top: 12px;
+    padding-top: -1rem;
     display: flex;
     justify-content: flex-start;
     gap: 30px;
