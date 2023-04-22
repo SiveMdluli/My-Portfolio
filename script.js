@@ -17,7 +17,6 @@ function closeNav(close) {
 document.getElementById('xOut').onclick(closeNav);
 
 // Contact for validation and giving error feedback
-/* Contact validation logic Section */
 const form = document.querySelector('form');
 function handleSubmit(event) {
   event.preventDefault();
