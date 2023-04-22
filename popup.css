@@ -19,6 +19,16 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* .container {
+  width: 100%;
+  margin: 114px auto;
+  display: grid;
+  gap: 88px;
+  font-family: "Poppins", sans-serif;
+    animation-name: card-body;
+  animation-duration: 3s;
+} */
+
 .card-body {
   border-radius: 16px;
   background-color: #fff;
